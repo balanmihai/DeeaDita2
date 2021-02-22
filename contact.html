@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <title>Contact me</title>
+</head>
+<body>
+<div class="contact">
+
+  <div class="circle up"></div>
+  <div class="circle down"></div>
+
+  <div class="navbar">
+    <div class="navbar-logo">
+      <a href="index.html">Deea Diță</a>
+      <div class="words">
+        <p>Breathe</p>
+        <p>Inhale</p> 
+        <p>Exhale</p>
+      </div>
+    </div>
+
+    <div class="navbar-settings">
+      <h4 id="time"></h4>
+    </div> 
+  </div>
+
+
+
+  <div class="center">
+    <div class="center-left">
+      <h1>Let's collaborate</h1>
+      <a href="index.html">contact@deeadita.com</a>
+      <h3>Say Hello</h3>
+      <img src="./images/snake.png" alt="">
+    </div>
+
+    <div class="center-right">
+      <div class="contactul" data-aos="fade-up"
+      data-aos-duration="2000">
+        <form id="form" class="topBefore"  method="POST">
+          <input id="name" type="text" placeholder="Name" name="name" required>
+          <input id="email" type="email" placeholder="E-mail" name="email" required>
+          <textarea id="message" type="message" placeholder="Write me something ..." name="message" required></textarea>
+          <input id="submit" type="submit" value="GET IN TOUCH">
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+    
+    
+  <div class="footer">
+    <div class="footer-left">
+      <a href="#">@eusuntideea</a>
+      <p>Copyright 2021</p>
+    </div>
+
+    <div class="footer-centre">
+      <a href="#">Bucharest, Romania</a>
+      <p>+04 0731 859 350</p>
+    </div>
+        
+    <div class="footer-right">
+      <a href="">
+        <h3>Submit</h3>
+        <img src="./images/arrow.svg" alt="arrow-right">
+      </a>
+    </div>    
+  </div>
+
+
+</div>
+<script src="./js/time.js"></script>
+<script src="./js/logo.js"></script>
+  
+</body>
+</html>

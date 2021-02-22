@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --green: #AFBE7D;
+  --crem: #FEFAE0;
+  --brown: #D4A373;
+  --black: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--black);
+  background: var(--crem);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a{
+  font-size: 1.5em;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--black);
+}
+
+.blog{
+  width: 94vw;
+  margin: auto;
+  height: 200vh;
+  background: var(--crem);
+  overflow: hidden;
+}
+
+
+.navbar{
+  position: absolute;
+  top: 0%;
+  width: 94vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo a{
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.navbar-settings{
+  display: inline-flex;
+}
+
+.navbar-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.words {
+  margin-left: .5rem;
+  visibility: hidden;
+}
+
+.words p {
+  transform: translateY(-50%);
+  position: absolute; 
+}
+
+.settings img{
+  padding-right: 10px;
+  height: 30px;
+}
+
+.center{
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.center h1{
+  font-size: 4.5em;
+  font-weight: 800;
+}
+.center p{
+  width: 76vw;
+  margin: auto;
+  padding-top: 5vh;
+  text-align: left;
+}
+
+
+@media (max-width: 1024px) {
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a{
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+  }
+
+
+  .blog{
+    width: 94vw;
+    margin: auto;
+    height: auto;
+    background: var(--crem);
+    overflow: hidden;
+  }
+  
+  
+  .navbar{
+    position: absolute;
+    top: 0%;
+    width: 94vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .navbar-logo a{
+    font-size: 2em;
+    font-weight: 800;
+  }
+  
+  .navbar-settings{
+    display: none;
+  }
+  
+  .navbar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .words {
+    margin-left: .5rem;
+    visibility: hidden;
+  }
+  
+  .words p {
+    transform: translateY(-50%);
+    position: absolute; 
+  }
+  
+  .settings img{
+    padding-right: 10px;
+    height: 30px;
+  }
+  
+  .center{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+  .center h1{
+    font-size:3em;
+    text-align: center;
+    font-weight: 800;
+  }
+  .center p{
+    padding-top: 5vh;
+    text-align: left;
+  }
+
+}
+

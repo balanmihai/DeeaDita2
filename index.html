@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deea Diță</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="main.css">
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+</head>
+<body>
+ 
+<div class="landing" id="landing">
+
+  <div class="landing-navbar">
+
+    <div class="landing-navbar-logo">
+        <a href="#">Deea Diță</a>
+        <div class="words">
+          <p>Breathe</p>
+          <p>Inhale</p> 
+          <p>Exhale</p>
+        </div>
+    </div>
+
+    <ul class="landing-navbar-menu">
+      <li><a href="#classes">My work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#art">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    
+    <div class="toggle">
+      <input type="checkbox" class="checkbox" id="chk" />
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+
+    <div class="landing-navbar-settings">
+
+
+      <audio id="background_audio">
+      </audio> 
+      
+        <input type="checkbox" name="un-mute" id="un-mute">
+        <label for="un-mute" class="unmute">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Mute_Icon.svg" title="Mute icon">
+        </label>
+        <label for="un-mute" class="mute">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg" alt="Speaker_Icon.svg" title="Unmute/speaker icon">
+        </label>
+      <h4 id="time"></h4>
+    </div>
+
+  </div>
+
+  <div class="landing-center">
+
+    <h1>Journey to Self</h1>
+    <p>Using a tried and true decorating rule can make your color choices so easy that you may wonder why everyone doesn’t follow it</p>
+
+    <!-- Circle Rotating -->
+    <button class="animated infinite rotate-full"><a href="#schedule">My Classes</a></button>
+
+  </div>
+
+  <div class="landing-footer">
+
+    <a href="#classes">
+      <h3>Explore</h3>
+      <img src="./images/arrow.svg" alt="arrow down">
+    </a>
+
+    <h4 id="date"></h4>
+    
+  </div>
+
+</div>
+
+<div class="classes" id="classes">
+
+  <div class="classes-left">
+    <h1>My Work</h1>
+    <h3>Asana</h3>
+    <p>- posturi din Hatha Yoga contopite cu un Flow Vinyasa</p>
+    <h3>Detensionare</h3>
+    <p>- posturi din Hatha Yoga contopite cu un Flow Vinyasa</p>
+    <h3>Detensionare</h3>
+    <p>- posturi din Hatha Yoga contopite cu un Flow Vinyasa</p>
+    <h3>Detensionare</h3>
+    <p>- posturi din Hatha Yoga contopite cu un Flow Vinyasa</p>
+  </div>
+
+  <div class="classes-arrow">
+    <a href="#landing">
+      <img src="./images/arrow.svg" alt="">
+    </a>
+  </div>
+
+  <div class="classes-right">
+    <h1>Updated every week</h1>
+    <img src="./images/plants.png" alt="">
+  </div>
+
+  <h3 class="classes-reminder2" id="reminder2"></h3>
+  <svg width="1920" height="146" viewBox="0 0 1920 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-26 0.699951L1.375 6.81152C28.75 13.3843 83.5 24.9156 138.25 49.9384C193 74.4999 247.75 111.4 302.5 111.4C357.25 111.4 412 74.4999 466.75 62.1615C521.5 50.2843 576.25 61.8156 631 74.4999C685.75 87.1843 740.5 98.7156 795.25 99.0615C850 98.7156 904.75 87.1843 959.5 92.9499C1014.25 98.7156 1069 124.084 1123.75 129.85C1178.5 135.616 1233.25 124.084 1288 117.512C1342.75 111.4 1397.5 111.4 1452.25 111.4C1507 111.4 1561.75 111.4 1616.5 86.8384C1671.25 61.8156 1726 13.3843 1780.75 13.0384C1835.5 13.3843 1890.25 61.8156 1917.62 86.8384L1945 111.4V259H1917.62C1890.25 259 1835.5 259 1780.75 259C1726 259 1671.25 259 1616.5 259C1561.75 259 1507 259 1452.25 259C1397.5 259 1342.75 259 1288 259C1233.25 259 1178.5 259 1123.75 259C1069 259 1014.25 259 959.5 259C904.75 259 850 259 795.25 259C740.5 259 685.75 259 631 259C576.25 259 521.5 259 466.75 259C412 259 357.25 259 302.5 259C247.75 259 193 259 138.25 259C83.5 259 28.75 259 1.375 259H-26V0.699951Z" fill="#AFBE7D"/>
+  </svg>
+    
+</div>
+
+<div class="schedule" id="schedule">
+
+  <h3 class="schedule-reminder1" id="reminder1"></h3>
+  <p>Using a tried and true decorating rule can make your color choices so easy that you may wonder why everyone doesn’t follow it</p>
+  <div class="schedule-day1" id="day1">
+    <h3>title</h3>
+    <p>Using a tried and true decorating rule can make your color choices so easy that you may wonder why everyone doesn’t follow it</p>
+  </div>
+  <div class="schedule-day2" id="day2">
+  </div>
+  <div class="schedule-day3" id="day3">
+  </div>
+  <div class="schedule-day4" id="day4">
+  </div>
+  <div class="schedule-day5" id="day5">
+  </div>
+  
+
+</div>
+
+<!-- JS - Random word -->
+<div class="pause" id="pause">
+
+  <h1>Breathe</h1>
+
+</div>
+
+<div class="art" id="art">
+
+  <svg width="1920" height="221" viewBox="0 0 1920 221" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1945 220.3L1917.62 214.188C1890.25 207.615 1835.5 196.084 1780.75 171.061C1726 146.5 1671.25 109.6 1616.5 109.6C1561.75 109.6 1507 146.5 1452.25 158.838C1397.5 170.715 1342.75 159.184 1288 146.5C1233.25 133.815 1178.5 122.284 1123.75 121.938C1069 122.284 1014.25 133.816 959.5 128.05C904.75 122.284 850 96.9155 795.25 91.1499C740.5 85.3843 685.75 96.9155 631 103.488C576.25 109.6 521.5 109.6 466.75 109.6C412 109.6 357.25 109.6 302.5 134.162C247.75 159.184 193 207.616 138.25 207.962C83.5 207.616 28.75 159.184 1.37499 134.162L-26 109.6L-26 -38L1.37498 -38C28.75 -38 83.5 -38 138.25 -38C193 -38 247.75 -38 302.5 -38C357.25 -38 412 -38 466.75 -38.0001C521.5 -38.0001 576.25 -38.0001 631 -38.0001C685.75 -38.0001 740.5 -38.0001 795.25 -38.0001C850 -38.0001 904.75 -38.0001 959.5 -38.0001C1014.25 -38.0001 1069 -38.0001 1123.75 -38.0001C1178.5 -38.0001 1233.25 -38.0001 1288 -38.0001C1342.75 -38.0001 1397.5 -38.0001 1452.25 -38.0001C1507 -38.0001 1561.75 -38.0001 1616.5 -38.0002C1671.25 -38.0002 1726 -38.0002 1780.75 -38.0002C1835.5 -38.0002 1890.25 -38.0002 1917.62 -38.0002L1945 -38.0002L1945 220.3Z" fill="#AFBE7D"/>
+    </svg>
+    
+
+  <div class="art-left">
+
+  </div>
+
+  <div class="art-right">
+  </div>
+
+</div>
+
+<div class="blogs" id="blogs">
+
+  <div class="section-header">
+    <div class="section-header-container">
+      <div class="section-title"><h3>My thoughts and adventures</h3></div>
+      <div class="section-order"><h3>Blogs</h3></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <section class="project">
+    <div class="project-container">
+      <div>
+        <nav class="menu">
+          <div class="menu__item">
+            <a href="blog.html" class="menu__item-link">01. Asterisks</a>
+            <img class="menu__item-img inverted" src="images/project-one.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Asterisks</span>
+                <span>Asterisks</span>
+                <span>Asterisks</span>
+                <span>Asterisks</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="menu__item">
+            <a class="menu__item-link">02. Unlocked</a>
+            <img class="menu__item-img inverted" src="images/project-two.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Unlocked</span>
+                <span>Unlocked</span>
+                <span>Unlocked</span>
+                <span>Unlocked</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="menu__item">
+            <a class="menu__item-link">03. Offbeat Radio</a>
+            <img class="menu__item-img inverted" src="images/project-three.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Offbeat Radio</span>
+                <span>Offbeat Radio</span>
+                <span>Offbeat Radio</span>
+                <span>Offbeat Radio</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="menu__item">
+            <a class="menu__item-link">04. Brutal</a>
+            <img class="menu__item-img inverted" src="images/project-four.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Brutal</span>
+                <span>Brutal</span>
+                <span>Brutal</span>
+                <span>Brutal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="menu__item">
+            <a class="menu__item-link">05. The Crew</a>
+            <img class="menu__item-img inverted" src="images/project-five.jpeg" />
+            <div class="marquee">
+              <div class="marquee__inner" aria-hidden="true">
+                <span>The Crew</span>
+                <span>The Crew</span>
+                <span>The Crew</span>
+                <span>The Crew</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <div class="blogs-footer">
+    <a href="">@eusuntideea</a>
+    <a href="">@eusuntideea</a>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="blogs-footer">
+    <p>Design and Development - Mihai Balan</p>
+    <a href="">balaurl.work</a>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="copyright">
+    <p>Copyright 2021</p>
+  </div>
+
+
+
+</div>
+
+<script src="./js/logo.js"></script>
+<script src="./js/darkmode.js"></script>
+<script src="./js/time.js"></script>
+<script src="./js/date.js"></script>
+<script src="./js/reminder1.js"></script>
+<script src="./js/reminder2.js"></script>
+<script src="./js/drag.js"></script>
+<script src="./js/music.js"></script>
+<script src="./js/mute.js"></script>
+
+
+</body>
+</html>
