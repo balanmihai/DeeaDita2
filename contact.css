@@ -478,9 +478,9 @@ textarea:hover {
 
 
   .footer{
+    padding-top: 5vh;
     width: 94vw;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
