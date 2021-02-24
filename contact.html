@@ -4,6 +4,7 @@
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="contact.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -34,14 +35,16 @@
 
 
   <div class="center">
-    <div class="center-left">
+    <div class="center-left" data-aos="fade-right"
+    data-aos-duration="2000">
       <h1>Let's collaborate</h1>
       <a href="index.html">contact@deeadita.com</a>
       <h3>Say Hello</h3>
       <img src="./images/snake.png" alt="">
     </div>
 
-    <div class="center-right">
+    <div class="center-right" data-aos="fade-up"
+    data-aos-duration="2000">
       <div class="contactul" data-aos="fade-up"
       data-aos-duration="2000">
         <form id="form" class="topBefore"  method="POST">
@@ -80,6 +83,11 @@
 </div>
 <script src="./js/time.js"></script>
 <script src="./js/logo.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   
 </body>
 </html>
