@@ -488,6 +488,7 @@ textarea:hover {
   }
   
   .footer a{
+    color: red;
     font-size: 1em;
     font-weight: 600;
   }
