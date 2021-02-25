@@ -3,6 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  line-height: 1;
+}
+dl,
+ol,
+li,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -22,15 +30,25 @@ html {
   background: var(--crem);
 }
 
+body {
+  background: var(--crem);
+}
+
 h1,
 h2,
 h3,
 h4,
 p,
 a {
+  text-decoration: none;
   font-size: 1.5em;
   font-family: "Cormorant Garamond", serif;
   color: var(--black);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--brown);
 }
 
 .landing {
@@ -61,8 +79,8 @@ a {
 .landing-center button {
   cursor: pointer;
   position: absolute;
-  top: 350px;
-  left: 1100px;
+  top: 40vh;
+  left: 65vw;
   z-index: 6;
   border-radius: 50%;
   width: 20em;
@@ -191,12 +209,10 @@ a {
 }
 
 .fa-moon {
-  /* color: #f1c40f; */
   color: var(--crem);
 }
 
 .fa-sun {
-  /* color: #f39c12; */
   color: var(--crem);
 }
 
@@ -431,11 +447,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .words-pause {
-  visibility: hidden;
   padding-right: 25vw;
+  visibility: hidden;
 }
 
 .words-pause h1 {
@@ -451,30 +468,40 @@ a {
   background: var(--crem);
 }
 
-.reviews h1 {
-  position: absolute;
-  padding-left: 2.5vw;
-  font-size: 7em;
+.carousel-item {
+  width: auto;
+  height: 60vh;
 }
 
-.initial-text {
-  font-size: 1.2em;
-  padding-bottom: 5vh;
-}
-
-.card-reviews {
-  width: 70vw;
-  margin: auto;
+.carousel-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.card-reviews p {
-  font-size: 1.2em;
-  text-align: center;
-  white-space: pre-wrap;
+.carousel-container p {
+  margin: 1vw;
+  font-size: 1.4em;
+  width: 80vw;
+}
+
+.carousel-control-prev span {
+  font-size: 20px;
+  color: var(--black);
+}
+
+.carousel-control-next span {
+  font-size: 20px;
+  color: var(--black);
+}
+
+.carousel-caption{
+  position: initial;
+}
+
+.reviews-data {
+  color: var(--black);
 }
 
 .reviews svg {
@@ -721,7 +748,6 @@ input#un-mute:checked ~ .mute img {
     margin: 2vh 1vw;
   }
 
-
   .landing-navbar-settings {
     display: none;
   }
@@ -767,13 +793,18 @@ input#un-mute:checked ~ .mute img {
     left: 0vw;
     z-index: 6;
     border-radius: 50%;
-    width: 15em;
-    height: 15em;
+    width: 12em;
+    height: 12em;
     background: var(--green);
     text-align: center;
     transform: rotate(-50deg);
     border: 0px solid var(--black);
     transition: 0.4s;
+  }
+
+  .landing-center button a {
+    font-weight: 700;
+    font-size: 2em;
   }
 
   .pause h1 {
@@ -799,7 +830,7 @@ input#un-mute:checked ~ .mute img {
   }
 
   .soon {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     white-space: pre-wrap;
   }
@@ -814,7 +845,7 @@ input#un-mute:checked ~ .mute img {
 
   .classes h1 {
     padding-left: 1.8vw;
-    font-size: 3em;
+    font-size: 3em !important;
   }
 
   .classes h3 {
@@ -869,16 +900,25 @@ input#un-mute:checked ~ .mute img {
   .schedule {
     width: 100vw;
     margin: auto;
-    height: 100vh;
+    height: auto;
     background: var(--green);
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
   }
 
   .info {
     white-space: pre-wrap;
     text-align: right;
     font-size: 1.5em;
-    margin-top: 35vh;
+    margin-top: 0vh;
     margin-left: 15vw;
+    margin-bottom: 0vh;
   }
 
   .schedule-reminder1 {
@@ -897,39 +937,55 @@ input#un-mute:checked ~ .mute img {
   .schedule-day3,
   .schedule-day4,
   .schedule-day5 {
-    display: none;
+    margin-top: 1vh;
+    border: 1px solid black;
+    height: 70vh;
+    width: 80vw;
+    position: initial;
   }
-  
+
+  .schedule-day1 p {
+    font-size: 1em;
+  }
+
   .reviews {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background: var(--crem);
   }
 
-  .reviews h1 {
-    position: absolute;
-    padding-left: 2.5vw;
-    font-size: 2em;
+  .carousel-control-prev span {
+    padding-right: 10vw;
+    font-size: 20px;
+    color: var(--black);
   }
 
-  .initial-text {
-    font-size: 1.2em;
-    padding-bottom: 5vh;
+  .carousel-control-next span {
+    padding-left: 10vw;
+    font-size: 20px;
+    color: var(--black);
   }
 
-  .card-reviews {
-    width: 70vw;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  .carousel-inner {
+    padding-top: 2vh;
   }
 
-  .card-reviews p {
-    font-size: 1.2em;
+  .carousel-item {
+    height: auto;
+  }
+
+  .carousel-container {
     text-align: center;
-    white-space: pre-wrap;
+  }
+
+  .carousel-container p {
+    margin: 1vw;
+    font-size: 0.8em;
+    width: 90vw;
+  }
+
+  .reviews-data {
+    color: var(--black);
   }
 
   .reviews svg {
@@ -940,7 +996,6 @@ input#un-mute:checked ~ .mute img {
 
   .blogs {
     width: 100vw;
-    margin: auto;
     height: auto;
     background: var(--crem);
   }
@@ -949,13 +1004,13 @@ input#un-mute:checked ~ .mute img {
     font-size: 2em;
     font-family: "Cormorant Garamond", serif;
   }
-  
+
   .menu__item {
     position: relative;
     padding: 1.6vw 0 0 0;
     margin: 4px;
   }
-  
+
   .menu__item-link {
     display: inline-block;
     cursor: pointer;
@@ -964,7 +1019,7 @@ input#un-mute:checked ~ .mute img {
     -webkit-transition: opacity 0.4s;
     transition: opacity 0.4s;
   }
-  
+
   .menu__item-link::before {
     all: initial;
     text-transform: uppercase;
@@ -974,13 +1029,13 @@ input#un-mute:checked ~ .mute img {
     left: 0;
     pointer-events: none;
   }
-  
+
   .menu__item-link:hover {
     -webkit-transition-duration: 0.1s;
     transition-duration: 0.1s;
     opacity: 0;
   }
-  
+
   .menu__item-img {
     pointer-events: none;
     position: absolute;
@@ -993,7 +1048,7 @@ input#un-mute:checked ~ .mute img {
       translate3d(0, 20px, 0);
     transform: translate3d(calc(-100% - 6vw), -30%, 0) translate3d(0, 20px, 0);
   }
-  
+
   .menu__item-link:hover + .menu__item-img {
     opacity: 1;
     -webkit-transform: translate3d(calc(-100% - 6vw), -30%, 0)
@@ -1002,7 +1057,7 @@ input#un-mute:checked ~ .mute img {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
   }
-  
+
   .menu {
     padding: 0vh 0 0 0vh;
     --offset: 20vw;
@@ -1010,7 +1065,7 @@ input#un-mute:checked ~ .mute img {
     --move-final: calc(-50% + var(--offset));
     font-size: 2em;
   }
-  
+
   .marquee {
     position: absolute;
     top: 0;
@@ -1020,7 +1075,7 @@ input#un-mute:checked ~ .mute img {
     pointer-events: none;
     mix-blend-mode: difference;
   }
-  
+
   .marquee__inner {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -1038,7 +1093,7 @@ input#un-mute:checked ~ .mute img {
     transition: opacity 0.1s;
     padding: 2vw 0;
   }
-  
+
   .menu__item-link:hover ~ .marquee .marquee__inner {
     -webkit-animation-play-state: running;
     animation-play-state: running;
@@ -1046,7 +1101,7 @@ input#un-mute:checked ~ .mute img {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
   }
-  
+
   .menu__item-link,
   .marquee span {
     white-space: nowrap;
@@ -1056,17 +1111,16 @@ input#un-mute:checked ~ .mute img {
   }
 
   .blogs-footer p,
-.blogs-footer a {
-  font-size: 1.2em;
-  font-weight: 700;
-}
+  .blogs-footer a {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
 
   .copyright p {
     font-size: 1.5em;
     font-weight: 700;
     padding-bottom: 5vh;
   }
-
 
   .project {
     overflow: hidden;
